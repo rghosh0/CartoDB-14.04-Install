@@ -36,7 +36,7 @@ git clone https://github.com/CartoDB/cartodb-postgresql.git
 pause "---> cd cartodb-postgresql"
 cd cartodb-postgresql
 pause "---> git checkout cdb"
-git checkout cdb
+#git checkout cdb
 pause "---> sudo make all install"
 sudo make all install
 #pause "---> sudo PGUSER=postgres make installcheck # to run tests"
@@ -44,10 +44,10 @@ sudo make all install
 pause "---> cd .."
 cd ..
 
-pause "script finished. cleaning..."
+#pause "script finished. cleaning..."
 
-rm_dir pg_schema_triggers
-rm_dir cartodb-postgresql
+#rm_dir pg_schema_triggers
+#rm_dir cartodb-postgresql
 
-echo "clean finished."
+#echo "clean finished."
 

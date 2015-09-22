@@ -20,7 +20,15 @@ sudo apt-get install \
 python2.7-dev build-essential python-setuptools
 
 echo ""
+pause "create softlink to cartodb dir..."
+rm_dir cartodb
+ln -s ../cartodb cartodb
+
+echo ""
 pause "use txt file to install python deps..."
+
+
+
 
 sudo -s <<ENDCOMMANDS
 echo "starting pip install..."
